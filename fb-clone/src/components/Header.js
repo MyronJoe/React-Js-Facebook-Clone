@@ -6,6 +6,11 @@ import FlagIcon from '@mui/icons-material/Flag';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
+import { Avatar, IconButton } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import ForumIcon from '@mui/icons-material/Forum';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Header() {
   return (
@@ -16,7 +21,7 @@ function Header() {
 
             <div className='header__input'>
                 <SearchIcon />
-                <input type='text' placeholder='What is on your mind' />
+                <input type='text' placeholder='Search facebook' />
             </div>
         </div>
 
@@ -38,7 +43,29 @@ function Header() {
             </div>
         </div>
 
-        <div className='header__right'></div>
+        <div className='header__right'>
+
+            <div className='header__info'>
+                <Avatar />
+                <h4>Myron Joe</h4>
+            </div>
+
+            <IconButton>
+                <AddIcon />
+            </IconButton>
+
+            <IconButton>
+                <ForumIcon />
+            </IconButton>
+
+            <IconButton>
+                <NotificationsActiveIcon />
+            </IconButton>
+
+            <IconButton>
+                <ExpandMoreIcon />
+            </IconButton>
+        </div>
 
     </div>
   )
