@@ -6,6 +6,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { Avatar, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
@@ -26,20 +27,23 @@ function Header() {
         </div>
 
         <div className='header__center'>
-            <div className='header__option'>
+            <div className='header__option icon'>
                 <HomeIcon fontSize='large'/>
             </div>
-            <div className='header__option'>
+            <div className='header__option icon'>
                 <FlagIcon fontSize='large'/>
             </div>
-            <div className='header__option'>
+            <div className='header__option icon'>
                 <SubscriptionsIcon fontSize='large'/>
             </div>
-            <div className='header__option'>
+            <div className='header__option icon'>
                 <StorefrontIcon fontSize='large'/>
             </div>
-            <div className='header__option'>
+            <div className='header__option icon'>
                 <SupervisedUserCircleIcon fontSize='large'/>
+            </div>
+            <div className='header__option menu'>
+                <MenuOpenIcon fontSize='large'/>
             </div>
         </div>
 
@@ -65,6 +69,11 @@ function Header() {
             <IconButton>
                 <ExpandMoreIcon />
             </IconButton>
+
+            <div className='header__info header__info2'>
+                <Avatar />
+                <h4>Myron Joe</h4>
+            </div>
         </div>
 
     </div>

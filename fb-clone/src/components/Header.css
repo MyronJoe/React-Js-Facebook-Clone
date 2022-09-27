@@ -1,51 +1,60 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    padding:0 10px;
+    padding: 0 10px;
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 100;
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.674);
-    
 }
-.header__left{
+
+.header__left {
     display: flex;
     align-items: center;
 }
-.header__left img{
+
+.header__left img {
     height: 40px;
+    cursor: pointer;
 }
-.header__input{
+
+.header__input {
     display: flex;
     align-items: center;
     background-color: #eff2f5;
     margin-left: 10px;
     border-radius: 5300px;
     padding: 5px 10px;
+    cursor: pointer;
 }
-.header__input input{
+
+.header__input input {
     border: none;
     padding: 10px;
     background: none;
     outline: none;
 }
-.header__center{
+
+.header__center {
     display: flex;
     align-items: center;
 }
-.header__center .MuiSvgIcon-root{
+
+.header__center .MuiSvgIcon-root {
     color: gray;
 }
-.header__option{
+
+.header__option {
     display: flex;
     align-items: center;
-    padding:  15px 25px;
+    padding: 15px 25px;
     margin: 0 5px;
     cursor: pointer;
     position: relative;
 }
-.header__option:first-child::before{
+
+.header__option:first-child::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -54,7 +63,8 @@
     width: 100%;
     background-color: #2e81f4;
 }
-.header__option:hover::before{
+
+.header__option:hover::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -63,20 +73,111 @@
     width: 100%;
     background-color: #2e81f4;
 }
-.header__option:hover{
+
+.header__option:hover {
     background-color: #eff2f5;
 }
-.header__center .MuiSvgIcon-root:hover{
+
+.header__center .MuiSvgIcon-root:hover {
     color: #2e81f4;
 }
-.header__right{
+
+.header__right {
     display: flex;
     align-items: center;
 }
-.header__info{
+
+.header__info {
     display: flex;
     align-items: center;
 }
-.header__info h4{
+
+.header__info h4 {
     margin-left: 10px;
+}
+
+.menu {
+    display: none;
+}
+
+.header__info2 {
+    display: none;
+}
+
+@media screen and (max-width:1070px) {
+    .header__option {
+        padding: 15px 10px;
+    }
+
+    .header__input {
+        width: 185px;
+        padding: 5px;
+    }
+
+    .header__input input {
+        width: 100%;
+        padding: 7px;
+
+    }
+
+    .header__info {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .header__option {
+        padding: 15px;
+    }
+
+    .header__input {
+        cursor: pointer;
+        border-radius: 100%;
+        padding: 0px;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__input input {
+        display: none;
+    }
+
+    .header__info:nth-child(1) {
+        display: none;
+    }
+
+    .header__info h4 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .icon {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        left: 96px;
+        top: 1px;
+    }
+
+    .menu .MuiSvgIcon-root {
+        font-size: 50px !important;
+    }
+
+    .header {
+        padding: 13px;
+    }
+
+    .header__option {
+        padding: 6px;
+    }
 }
