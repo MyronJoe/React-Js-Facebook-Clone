@@ -12,7 +12,6 @@ function App() {
       <div className='app__body'>
 
           <Sidebar />
-          {/* <h1>sidebar</h1> */}
           {/* <h1>Feeds</h1> */}
           {/* <h1>Widget</h1> */}
       </div>
