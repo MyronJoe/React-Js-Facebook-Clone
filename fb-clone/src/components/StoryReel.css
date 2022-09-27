@@ -1,0 +1,34 @@
+.story{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition:.3s ease-out;
+    padding: 3px;
+}
+.story:hover{
+    transform: scale(1.05);
+}
+.story_avatar{
+    margin: 6px;
+    border: 5px solid #2e81f4;
+}
+.story h4{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 5px black;
+}
+.story__reel{
+    display: flex;
+    align-items:center ;
+}

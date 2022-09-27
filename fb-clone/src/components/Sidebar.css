@@ -5,7 +5,7 @@
     cursor: pointer;
 }
 .sidebar__row:hover{
-    background-color: #eee;
+    background-color: #ddd;
     border-radius: 10px;
 }
 .sidebar__row h4{
