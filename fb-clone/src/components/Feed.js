@@ -1,5 +1,6 @@
 import React from 'react'
 import './Feed.css'
+import MessageSender from './MessageSender'
 import StoryReel from './StoryReel'
 
 function Feed() {
@@ -7,8 +8,8 @@ function Feed() {
     <div className='feed'>
         
         <StoryReel />
-
-        {/* <h1>MessageSender</h1> */}
+        <MessageSender />
+      
         {/* <h1>Comments</h1> */}
     </div>
   )
