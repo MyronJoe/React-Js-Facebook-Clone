@@ -1,6 +1,7 @@
 import React from 'react'
 import './Feed.css'
 import MessageSender from './MessageSender'
+import Post from './Post'
 import StoryReel from './StoryReel'
 
 function Feed() {
@@ -10,7 +11,7 @@ function Feed() {
         <StoryReel />
         <MessageSender />
       
-        {/* <h1>Comments</h1> */}
+        <Post />
     </div>
   )
 }
