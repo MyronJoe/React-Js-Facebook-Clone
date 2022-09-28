@@ -15,3 +15,24 @@
     width: 60%;
     /* background-color: blue; */
 }
+
+
+/* all Responsive break points */
+
+
+/* @media screen and (max-width:1140px){
+    
+    .sidebar{
+        position: absolute;
+        z-index: 50;
+        background-color: white;
+        width: 100%;
+        height: 90vh;
+        top: 66px;
+        border-top: 3px solid #2e81f4;
+        left:-100% ;
+    }
+    .active{
+        left: 0;
+    }
+} */

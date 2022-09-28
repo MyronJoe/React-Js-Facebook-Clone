@@ -1,3 +1,6 @@
-.widgets{
-    padding: 10px;
+.widget{
+    background-color: #ddd;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
 }
