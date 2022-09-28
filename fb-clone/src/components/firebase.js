@@ -1,7 +1,7 @@
 // Import firebase
 import { initializeApp} from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import { getAuth } from "firebase/auth";
+import { getFirestore} from 'firebase/firestore/lite';
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Import firebase config from firebase site
 const firebaseConfig = {
@@ -26,7 +26,7 @@ const db = getFirestore(app)
 const auth = getAuth(app);
 
 // initialize firebase Provider for login support
-// const provider = GoogleAuthProvider(app);
+const provider = new GoogleAuthProvider();
 
-// export{auth, provider}
-// export default db;
+export{auth, provider}
+export default db;
