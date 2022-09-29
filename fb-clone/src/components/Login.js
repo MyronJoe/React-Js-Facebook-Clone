@@ -5,11 +5,7 @@ import './Login.css'
 import { getAuth, signInWithPopup, GoogleAuthProvider} from "firebase/auth";
 import { provider } from "./firebase.js";
 
-
-
-
 function Login() {
-
     const handleSubmit = (e) =>{
         const auth = getAuth();
         signInWithPopup(auth, provider)
@@ -20,7 +16,6 @@ function Login() {
             console.log(token)
             // The signed-in user info.
             const user = result.user;
-
             console.log(user)
             // ...
         }).catch((error) => {
