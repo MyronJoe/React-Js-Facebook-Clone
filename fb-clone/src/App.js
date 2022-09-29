@@ -5,9 +5,12 @@ import Header from './components/Header';
 import Login from './components/Login';
 import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
+import { useStateValue } from '../src/components/StateProvider';
+// import { actionType } from '../Reducer.js';
 
 function App() {
-  const user = null
+  const [{ user }, dispatch] = useStateValue()
+
   return (
     <div className="app">
       {!user ? 

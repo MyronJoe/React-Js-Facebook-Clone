@@ -4,8 +4,14 @@ import './Login.css'
 // import {auth} from './firebase.js'
 import { getAuth, signInWithPopup, GoogleAuthProvider} from "firebase/auth";
 import { provider } from "./firebase.js";
+import { useStateValue } from './StateProvider';
+import { actionType } from './Reducer.js';
 
 function Login() {
+
+    const [state, dispatch] = useStateValue()
+
+
     const handleSubmit = (e) =>{
         const auth = getAuth();
         signInWithPopup(auth, provider)
@@ -16,6 +22,11 @@ function Login() {
             console.log(token)
             // The signed-in user info.
             const user = result.user;
+
+                dispatch({
+                    type: actionType.SET_USER,
+                    user: result.user,
+                })
             console.log(user)
             // ...
         }).catch((error) => {
