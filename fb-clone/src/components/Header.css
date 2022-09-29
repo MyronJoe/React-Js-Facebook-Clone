@@ -91,6 +91,11 @@
     display: flex;
     align-items: center;
 }
+.header__info2 {
+    display: flex;
+    align-items: center;
+    display: none;
+}
 
 .header__info h4 {
     margin-left: 10px;
@@ -100,9 +105,6 @@
     display: none;
 }
 
-.header__info2 {
-    display: none;
-}
 
 
 
@@ -110,6 +112,10 @@
 @media screen and (max-width:1070px) {
     .header__option {
         padding: 15px 10px;
+    }
+
+    .menu {
+        display: block;
     }
 
     .header__input {
@@ -150,6 +156,9 @@
 
     .header__info:nth-child(1) {
         display: none;
+    }
+    .header__info2{
+        display: block;
     }
 
     .header__info h4 {
