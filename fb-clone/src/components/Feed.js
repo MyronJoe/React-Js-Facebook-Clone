@@ -3,9 +3,8 @@ import './Feed.css'
 import MessageSender from './MessageSender'
 import Post from './Post'
 import StoryReel from './StoryReel'
-import { doc, onSnapshot, collection, query, where} from "firebase/firestore";
+import { doc, onSnapshot, collection, where, query, orderBy, getFirestore} from "firebase/firestore";
 import { useStateValue } from './StateProvider';
-import { getFirestore } from 'firebase/firestore'
 
 
 
@@ -20,6 +19,9 @@ function Feed() {
     const unsub = onSnapshot(post, (querySnapshot) => {
       // console.log(querySnapshot.docs.map(doc => doc.data()));
       setPosts( querySnapshot.docs.map(doc => ({ id: doc.id, data: doc.data() }) ));
+
+      const citiesRef = collection(db, "posts");
+      const doc = query(citiesRef,  orderBy("timestamp", "desc"));
     });
   }, [])
   console.log(posts)

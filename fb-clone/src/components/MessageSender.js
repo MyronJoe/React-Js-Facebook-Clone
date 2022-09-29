@@ -4,12 +4,14 @@ import './MessageSender.css'
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
-
-
+// import db from './firebase';
+import app from './firebase';
+import { doc, serverTimestamp, getFirestore, collection, addDoc } from "firebase/firestore";
 import { useStateValue } from './StateProvider';
 
   
 function MessageSender() {
+    const db = getFirestore();
 
     const [{ user }, dispatch] = useStateValue()
 
@@ -22,6 +24,18 @@ function MessageSender() {
         console.log(input)
         console.log(ImageURL)
         
+        
+
+        // Add a new document with a generated id.
+        const docRef = addDoc(collection(db, "posts"), {
+            message: input,
+            timestamp: serverTimestamp(),
+            profilepic: user.photoURL,
+            username: user.displayName,
+            image: ImageURL
+        });
+        console.log("Document written with ID: ", docRef.id);
+
 
         setImageUrl("")
         setInput("")

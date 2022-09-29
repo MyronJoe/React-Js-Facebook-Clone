@@ -27,4 +27,5 @@ const auth = getAuth(app);
 // initialize firebase Provider for login support
 const provider = new GoogleAuthProvider();
 
-export{auth, provider}
+export{auth, provider, app}
+export default db;
