@@ -6,7 +6,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import { Avatar, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
@@ -47,7 +47,7 @@ function Header() {
                 <SupervisedUserCircleIcon fontSize='large'/>
             </div>
             <div className='header__option menu'>
-                <MenuOpenIcon fontSize='large'/>
+                <MenuSharpIcon fontSize='large'/>
             </div>
         </div>
 
