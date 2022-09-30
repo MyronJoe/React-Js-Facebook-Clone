@@ -15,8 +15,22 @@
     width: 60%;
     /* background-color: blue; */
 }
-
-
+@media screen and (max-width:920px) {
+    .app__body{
+        flex-direction: column;
+        padding: 2em 4em;
+    }
+}
+@media screen and (max-width:720px) {
+    .app__body{
+        padding: 2em;
+    }
+}
+@media screen and (max-width:720px) {
+    .app__body{
+        padding: 1em 0;
+    }
+}
 /* all Responsive break points */
 
 

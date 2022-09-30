@@ -8,6 +8,7 @@ import { actionType } from './Reducer.js';
 
 function Login() {
     const [state, dispatch] = useStateValue()
+    
     const handleSubmit = (e) => {
         const auth = getAuth();
         signInWithPopup(auth, provider)

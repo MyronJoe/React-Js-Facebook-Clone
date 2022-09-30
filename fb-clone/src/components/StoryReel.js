@@ -24,7 +24,7 @@ function StoryReel() {
 
             title='Austine Amason'
         />
-        <Story 
+        <Story className='remover'
             image={user3}
             
             profilesrc={user3}
