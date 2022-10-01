@@ -1,6 +1,9 @@
 .widget{
-    background-color: #ddd;
     width: 100%;
-    padding: 1em;
+    padding: 0 1.2em;
+}
+.widget h1{
+    background-color: #ddd;
     text-align: center;
+    width: 100%;
 }

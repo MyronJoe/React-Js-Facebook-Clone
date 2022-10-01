@@ -53,7 +53,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
-@media screen and (max-width:800px){
+
+@media screen and (max-width:700px){
     .msg-option h4{
         margin-left: 3px;
         font-size: 13px;
@@ -65,6 +66,9 @@
         padding: 15px 3px;
         margin: 5px 0px;
     }
+    
+}
+@media screen and (max-width:500px){
     .message__sender__top form input{
         padding: 15px 10px;
         margin: 0 5px;
@@ -77,5 +81,36 @@
     }
     .message__sender__top{
         margin: auto;
+    }
+    .msg-option h4{
+        margin-left: 3px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:450px){
+    .message__sender__url{
+        width: 80px;
+    }
+    .message__sender__top form input{
+        padding: 11px 10px;
+        margin: 0 9px;
+    }
+}
+@media screen and (max-width:400px){
+    .message__sender__url{
+        width: 70px;
+    }
+    .message__sender__top form input{
+        padding: 11px 10px;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width:370px){
+    .message__sender__url{
+        width: 65px;
+    }
+    .message__sender__top form input{
+        padding: 10px 8px;
+        margin: 0 3px;
     }
 }
