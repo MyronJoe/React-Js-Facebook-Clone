@@ -14,9 +14,12 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useStateValue } from './StateProvider';
 
-function Header() {
+function Header({setClick, click}) {
 
     const [{ user }, dispatch] = useStateValue()
+
+    // defined the click funtion passed as a props from appjs
+    const handleClick = () => setClick(!click)
 
   return (
     <div className='header'>
@@ -46,7 +49,7 @@ function Header() {
             <div className='header__option icon'>
                 <SupervisedUserCircleIcon fontSize='large'/>
             </div>
-            <div className='header__option menu'>
+            <div className='header__option menu' onClick={handleClick}>
                 <MenuSharpIcon fontSize='large'/>
             </div>
         </div>

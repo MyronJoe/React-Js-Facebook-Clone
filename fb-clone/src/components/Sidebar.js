@@ -10,11 +10,12 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useStateValue } from './StateProvider';
 
-function Sidebar() {
+//passed click as a props from appjs
+function Sidebar({click}) {
   const [{ user }, dispatch] = useStateValue()
 
   return (
-    <div className='sidebar'>
+    <div className={click ? 'sidebar active' : 'sidebar'}>
         <SiderbarRow src={user.photoURL}
         title={user.displayName}/>
         <SiderbarRow Icon={LocalHospitalIcon} title='COVID-19 Information Center' />
