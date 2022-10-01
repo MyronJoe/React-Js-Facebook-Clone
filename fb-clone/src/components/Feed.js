@@ -30,7 +30,7 @@ function Feed() {
     <div className='feed'>
         
         <StoryReel />
-        {/* <MessageSender /> */}
+        <MessageSender />
       
         
         {posts.map((post) => (
