@@ -10,7 +10,6 @@
 }
 .message__sender__top{
     display: flex;
-    border-bottom: 1px solid #eff2f5;
     align-items: center;
     padding: 15px;
 }
@@ -21,7 +20,7 @@
 .message__sender__top form input{
     outline: none;
     border: none;
-    padding: 15px 15px;
+    padding: 15px;
     margin: 0 10px;
     border-radius: 999px;
     background-color: #eff2f5;
@@ -36,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border-top: 1px solid #eff2f5;
 }
 .msg-option{
     padding: 15px 20px;
@@ -52,4 +52,30 @@
     background-color: #eff2f5;
     border-radius: 10px;
     cursor: pointer;
+}
+@media screen and (max-width:800px){
+    .msg-option h4{
+        margin-left: 3px;
+        font-size: 13px;
+    }
+    .msg-option .MuiSvgIcon-root{
+        font-size: 16px;
+    }
+    .msg-option{
+        padding: 15px 3px;
+        margin: 5px 0px;
+    }
+    .message__sender__top form input{
+        padding: 15px 10px;
+        margin: 0 5px;
+    }
+    .message__sender__url{
+        width: 130px;
+    }
+    .message__sender__input{
+        flex: 0.8;
+    }
+    .message__sender__top{
+        margin: auto;
+    }
 }
