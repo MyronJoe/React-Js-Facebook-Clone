@@ -7,7 +7,7 @@ function Widgets() {
 
         <div className='widget'>
 
-        <iframe title='fra' src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fmyron.joe.50&width=350&show_text=true&height=223&appId" ></iframe>
+        <a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/KamTech_01?ref_src=twsrc%5Etfw">Tweets by KamTech_01</a> 
 
         </div>
     </div>
