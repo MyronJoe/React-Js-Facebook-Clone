@@ -14,11 +14,10 @@ function Login() {
             .then((result) => {
                 const credential = GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
-                console.log(token)
-                const user = result.user;
+                const user = 'Joe';
                 dispatch({
                     type: actionType.SET_USER,
-                    user: result.user,
+                    user: 'Joe',
                 })
                 console.log(user)
             }).catch((error) => {
