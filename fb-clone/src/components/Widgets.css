@@ -38,10 +38,10 @@
     .widgets {
         width: 100%;
     }
-
-    iframe {
-        width: 1000px;
-        margin: auto;
-
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
     }
 }

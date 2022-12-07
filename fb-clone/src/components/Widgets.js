@@ -15,9 +15,9 @@ function Widgets() {
 
 
                 <div className='info'>
-                  <h4>KamTech Web Stores</h4>
+                  <h4>KamTech Web Designs</h4>
 
-                    <p>Twiter @kamTech_01</p>
+                    <p>Twiter: @kamTech_01</p>
 
                 </div>
 
@@ -29,9 +29,9 @@ function Widgets() {
 
 
                 <div className='info'>
-                  <h4>KamTech Web Stores</h4>
+                  <h4>KamTech Web Designs</h4>
 
-                    <p>Twiter @kamTech_01</p>
+                    <p>Facebook: Name Nt Defind</p>
 
                 </div>
 
@@ -46,9 +46,9 @@ function Widgets() {
 
 
                 <div className='info'>
-                  <h4>KamTech Web Stores</h4>
+                  <h4>KamTech Web Designs</h4>
 
-                    <p>Twiter @kamTech_01</p>
+                    <p>Phone: +2348109989839</p>
 
                 </div>
 
@@ -56,11 +56,11 @@ function Widgets() {
             
             <div className='card'>
 
-                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/ready-to-go-adidas-sweatshirt-jacket-guocali-com-2.jpg?v=1669050758&width=360' alt=''/>
+                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/collections/sneakers-guocali-com.jpg?v=1669048971&width=535' alt=''/>
 
 
                 <div className='info'>
-                  <h4>KamTech Web Stores</h4>
+                  <h4>KamTech Web Designs</h4>
 
                     <p>Twiter @kamTech_01</p>
 
