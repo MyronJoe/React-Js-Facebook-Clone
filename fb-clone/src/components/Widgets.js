@@ -7,16 +7,60 @@ function Widgets() {
 
         <div className='widget'>
 
+        <h2>Sponsored</h2>
           <div className='top'>
-            <h2>Sponsored</h2>
+            <div className='card'>
 
-            <div>
-
-                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/love-moschino-women-dress-dresses-guocali-com-1_2c4d7cad-3bd7-4718-8644-7878e2283062.jpg?v=1669382314&width=535' />
+                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/tommy-hilfiger-jeans-men-blazer-jacket-guocali-com-1_ebe5995e-37a9-4397-861b-24e4f36c9e34.jpg?v=1669383664&width=535' alt=''/>
 
 
-                <div>
-                  <h2>KamTech Web Stores</h2>
+                <div className='info'>
+                  <h4>KamTech Web Stores</h4>
+
+                    <p>Twiter @kamTech_01</p>
+
+                </div>
+
+            </div>
+            
+            <div className='card'>
+
+                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/ready-to-go-adidas-sweatshirt-jacket-guocali-com-2.jpg?v=1669050758&width=360' alt=''/>
+
+
+                <div className='info'>
+                  <h4>KamTech Web Stores</h4>
+
+                    <p>Twiter @kamTech_01</p>
+
+                </div>
+
+            </div>
+
+
+          </div>
+          <div className='top'>
+            <div className='card'>
+
+                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/3-piece-tuxedo-suit-3-piece-suit-guocali-com-1.jpg?v=1669382254&width=535' alt=''/>
+
+
+                <div className='info'>
+                  <h4>KamTech Web Stores</h4>
+
+                    <p>Twiter @kamTech_01</p>
+
+                </div>
+
+            </div>
+            
+            <div className='card'>
+
+                <img src='https://cdn.shopify.com/s/files/1/0655/4465/0993/products/ready-to-go-adidas-sweatshirt-jacket-guocali-com-2.jpg?v=1669050758&width=360' alt=''/>
+
+
+                <div className='info'>
+                  <h4>KamTech Web Stores</h4>
 
                     <p>Twiter @kamTech_01</p>
 

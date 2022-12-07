@@ -1,26 +1,47 @@
-.widget{
+.widget {
     width: 100%;
     padding: 0 1.2em;
 }
-.widget h1{
+
+.widget h1 {
     background-color: #ddd;
     text-align: center;
     width: 100%;
 }
-.fram{
-    width:100%;
-     height:"331";
-     border:none;
-     overflow:hidden; 
-    
+
+.fram {
+    width: 100%;
+    height: "331";
+    border: none;
+    overflow: hidden;
+
 }
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.widget h2:nth-child(1){
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 920px) {
-    .widgets{
+    .widgets {
         width: 100%;
     }
-    iframe{
-        width:1000px;
+
+    iframe {
+        width: 1000px;
         margin: auto;
-        
+
     }
 }
