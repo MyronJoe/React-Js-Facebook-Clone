@@ -7,7 +7,7 @@ function Widgets() {
 
         <div className='widget'>
 
-          <h1>lorem ipsum (my Facebook widget space - #Myron Joe)</h1>
+        <iframe title='fra' src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fmyron.joe.50&width=350&show_text=true&height=223&appId" ></iframe>
 
         </div>
     </div>
