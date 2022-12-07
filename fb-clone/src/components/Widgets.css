@@ -44,4 +44,8 @@
         justify-content: center;
         margin-top: 10px;
     }
+    .widget h2:nth-child(1){
+        text-align: center;
+    }
+    
 }
