@@ -9,30 +9,11 @@ import { actionType } from './Reducer.js';
 function Login() {
     const [state, dispatch] = useStateValue()
     const handleSubmit = (e) => {
-        const auth = getAuth();
-        signInWithPopup(auth, provider)
-            .then((result) => {
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
-                const user = 'Joe';
-                dispatch({
-                    type: actionType.SET_USER,
-                    user: 'Joe',
-                })
-                console.log(user)
-            }).catch((error) => {
-                const errorCode = error.code;
-                alert(errorCode)
-                const errorMessage = error.message;
-                alert(errorMessage)
-                // The email of the user's account used.
-                const email = error.customData.email;
-                alert(email)
-                // The AuthCredential type that was used.
-                const credential = GoogleAuthProvider.credentialFromError(error);
-                alert(credential)
-                // ...
-            });
+        const auth = 'Joe';
+        dispatch({
+            type: actionType.SET_USER,
+            user: 'Joe',
+        })
     }
     return (
         <div className='login' >

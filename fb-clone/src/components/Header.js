@@ -58,7 +58,7 @@ function Header({setClick, click}) {
 
             <div className='header__info'>
                 <Avatar src={user.photoURL}/>
-                <h4>{user.displayName}</h4>
+                <h4>KamTech</h4>
             </div>
 
             <IconButton>

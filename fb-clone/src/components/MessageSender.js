@@ -52,7 +52,7 @@ function MessageSender() {
                 onChange={(e) => setInput(e.target.value)}
                 className='message__sender__input' 
                 type='text' 
-                placeholder={`What's on your mind ${user.displayName}?`}
+                placeholder={`What's on your mind KamTech?`}
                 />
                 <input
                 value={ImageURL}
